@@ -20,7 +20,7 @@ header nav {
   align-items: center;
 }
 header nav .logo img {
-  width: 50px;
+  width: 150px;
 }
 header nav .nav-links {
   list-style: none;
@@ -88,4 +88,39 @@ footer {
   color: #ffffff;
   padding: 1rem;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  nav .nav-links {
+    flex-direction: column;
+  }
+  nav .nav-links li {
+    margin: 0.5rem 0;
+  }
+  .intro-text h1 {
+    font-size: 2rem;
+  }
+  .intro-text p {
+    font-size: 1rem;
+  }
+  .intro-text button {
+    padding: 0.5rem 1.5rem;
+  }
+  .about-logo {
+    width: 150px;
+  }
+}
+@media (max-width: 480px) {
+  header nav {
+    padding: 1rem;
+  }
+  .intro-text h1 {
+    font-size: 1.5rem;
+  }
+  .intro-text p {
+    font-size: 0.9rem;
+  }
+  footer {
+    font-size: 0.8rem;
+  }
 }/*# sourceMappingURL=style.css.map */
