@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f7fa;
+  color: #1850a2;
+}
+
+header {
+  background-color: #1850a2;
+  padding: 1rem 2rem;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav .logo img {
+  width: 50px;
+}
+header nav .nav-links {
+  list-style: none;
+  display: flex;
+}
+header nav .nav-links li {
+  margin-left: 1.5rem;
+}
+header nav .nav-links li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+header nav .nav-links li a:hover {
+  color: #ffcd00;
+}
+
+.section-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1850a2;
+  color: #ffffff;
+}
+.section-home .intro-text {
+  text-align: center;
+}
+.section-home .intro-text h1 {
+  font-size: 3rem;
+}
+.section-home .intro-text p {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+.section-home .intro-text button {
+  background-color: #ffcd00;
+  border: none;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.section-home .intro-text button:hover {
+  background-color: #cca400;
+}
+
+.section-about, .section-roadmap, .section-contact {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.section-about h2, .section-roadmap h2, .section-contact h2 {
+  color: #1850a2;
+  font-size: 2.5rem;
+}
+.section-about p, .section-roadmap p, .section-contact p {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+.section-about .about-logo, .section-roadmap .about-logo, .section-contact .about-logo {
+  width: 50px;
+  margin-top: 2rem;
+}
+
+footer {
+  background-color: #1850a2;
+  color: #ffffff;
+  padding: 1rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  nav .nav-links {
+    flex-direction: column;
+  }
+  nav .nav-links li {
+    margin: 0.5rem 0;
+  }
+  .intro-text h1 {
+    font-size: 2rem;
+  }
+  .intro-text p {
+    font-size: 1rem;
+  }
+  .intro-text button {
+    padding: 0.5rem 1.5rem;
+  }
+  .about-logo {
+    width: 150px;
+  }
+}
+@media (max-width: 480px) {
+  header nav {
+    padding: 1rem;
+  }
+  .intro-text h1 {
+    font-size: 1.5rem;
+  }
+  .intro-text p {
+    font-size: 0.9rem;
+  }
+  footer {
+    font-size: 0.8rem;
+  }
+}/*# sourceMappingURL=style.css.map */
