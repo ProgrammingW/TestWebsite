@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -66,21 +67,73 @@ header nav .nav-links li a:hover {
   background-color: #cca400;
 }
 
-.section-about, .section-roadmap, .section-contact {
+.section-about, .section-contact {
   padding: 4rem 2rem;
   text-align: center;
 }
-.section-about h2, .section-roadmap h2, .section-contact h2 {
+.section-about h2, .section-contact h2 {
   color: #1850a2;
   font-size: 2.5rem;
 }
-.section-about p, .section-roadmap p, .section-contact p {
+.section-about p, .section-contact p {
   font-size: 1.2rem;
   margin: 1rem 0;
 }
-.section-about .about-logo, .section-roadmap .about-logo, .section-contact .about-logo {
-  width: 150px;
+.section-about .about-logo, .section-contact .about-logo {
+  width: 50px;
   margin-top: 2rem;
+}
+
+.section-roadmap {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.section-roadmap .roadmap-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Esto asegura 3 columnas en una fila */
+  gap: 2rem;
+}
+@media (max-width: 1024px) {
+  .section-roadmap .roadmap-container {
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas medianas */
+  }
+}
+@media (max-width: 768px) {
+  .section-roadmap .roadmap-container {
+    grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+  }
+}
+.section-roadmap .project-card {
+  background-color: #ffffff;
+  border: 1px solid #1850a2;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+.section-roadmap .project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+.section-roadmap .project-card .project-image {
+  background-color: #3e80e2;
+}
+.section-roadmap .project-card .project-image img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #1850a2;
+}
+.section-roadmap .project-card .project-description {
+  padding: 1.5rem;
+}
+.section-roadmap .project-card .project-description h3 {
+  font-size: 1.5rem;
+  color: #1850a2;
+  margin-bottom: 0.5rem;
+}
+.section-roadmap .project-card .project-description p {
+  font-size: 1rem;
+  color: #0b2449;
 }
 
 footer {
