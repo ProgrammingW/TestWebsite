@@ -18,7 +18,7 @@ body {
 }
 
 header {
-    background-color: $primary-color;
+    //background-color: $primary-color;
     padding: 1rem 2rem;
     nav {
         display: flex;
@@ -43,13 +43,18 @@ header {
         }
     }
 }
-
+.contone{
+	//background-color:#f5f7fa ;
+	background-image: url('../images/test.jpg'); // Adjust the path as needed
+    background-size: cover; // Optional: makes the background cover the entire element
+    background-position: center; // Optional: centers the image
+}
 .section-home {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: $primary-color;
+    //background-color: $primary-color;
     color: $secondary-color;
     .intro-text {
         text-align: center;

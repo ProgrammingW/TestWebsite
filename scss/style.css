@@ -14,7 +14,6 @@ body {
 }
 
 header {
-  background-color: #1850a2;
   padding: 1rem 2rem;
 }
 header nav {
@@ -40,12 +39,17 @@ header nav .nav-links li a:hover {
   color: #ffcd00;
 }
 
+.contone {
+  background-image: url("../images/test.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
 .section-home {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #1850a2;
   color: #ffffff;
 }
 .section-home .intro-text {
